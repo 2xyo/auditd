@@ -1,0 +1,5 @@
+language: minimal
+sudo: required
+
+script:
+- sudo auditctl -R audit.rules
