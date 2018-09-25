@@ -5,4 +5,5 @@ before_install:
   - sudo apt-get install -y auditd
 
 script:
+- sudo chown root:root audit.rules && sudo chmod 600 audit.rules
 - sudo auditctl -R audit.rules
