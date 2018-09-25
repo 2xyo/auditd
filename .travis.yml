@@ -1,5 +1,8 @@
 language: minimal
 sudo: required
 
+before_install:
+  - sudo apt-get install -y auditd
+
 script:
 - sudo auditctl -R audit.rules
